@@ -1,0 +1,18 @@
+La decisión múltiple SWITCH tiene la siguiente estructura:
+
+	switch (VariableEntera)
+	{
+		case valor1:
+			accionA;
+			accionB;
+				:
+			break;
+		case valor2;
+			accionX;
+			accionY;
+				:
+			break;
+		:
+		default:
+			masAcciones;
+	}

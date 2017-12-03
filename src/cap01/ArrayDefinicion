@@ -1,0 +1,64 @@
+1.4.4 Arrays
+
+Un array es un conjunto de variables del mismo tipo cuyas direcciones de memoria son contiguas. Esto permite definir u nombre para el array
+(conjunto de variables) y acceder a cada elemento del conjunto (a cada variable) a través del nombre común (nombre del array) más un
+subíndice que especifica la posición relativa del elemento al que queremos acceder.
+
+En Java los arrays comienzan siempre desde cero y se definen de la siguiente manera:
+
+//Define un array de 10 elementos enteros numerados de 0 a 9
+int arr[] = new int[10];
+
+También podemos construir un array de n elementos, siendo n una variable.
+int n = 10;
+int arr[] = new int[n];
+
+Debe quedar claro que el array es estático. Una vez definido su tamaño este será fijo.
+No se puden agregar ni eliminar elementos de un array.
+
+Para acceder a un elemento del array, lo hacemos a través de un subíndice.
+// Asigno el número 123 en la posición 5 del array arr
+arr[5] = 123;
+
+----------------------------------------------------------------------------------
+
+En Java los arrays son objetos y tienen un atributo length que indica su dimensión.
+
+//Creo un array de Strings con los nombres de los Beatles
+String beatles[] = {"John","Paul","George","Ringo"};
+
+//Imprime en consola cuántos son los Beatles
+System.out.println("Los Beatles son: "+beatles.length);
+
+Las siguientes son formas correctas y equivalentes para definir arrays:
+
+String arr[];
+String []arr;
+String[] arr;
+
+Notemos también que no es lo mismo "definir" un array que "crear (o instanciar)" el array.
+
+//Definimos un array de Strings (aun sin dimensionar)
+String arr[];
+
+//Creamos (instanciamos) el array
+arr = new String[10];
+
+O bien
+//Definimos e instanciamos el array de 10 Strings
+String arr[] = new String[10];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
